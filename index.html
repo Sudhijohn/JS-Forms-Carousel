@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- <script defer src="./forms.js"></script> -->
+    <script type="module" src="./script.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <img class="arrow" src="./assets/left-arrow.svg" alt="left-arrow" />
+      <form id="form" action="submit">
+        <section class="personal-details">
+          <div class="name">
+            <label for="name">Name :</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="name">
+            <label for="email">Email :</label>
+            <input type="email" id="email" />
+          </div>
+          <div class="name">
+            <label for="phone">Phone :</label>
+            <input type="number" id="phone" required />
+          </div>
+        </section>
+      </form>
+      <img class="arrow" src="./assets/right-arrow.svg" alt="right-arrow" />
+    </main>
+  </body>
+</html>
