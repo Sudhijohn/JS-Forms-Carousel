@@ -15,15 +15,15 @@ export function practiceForms() {
     label[for="username"],label[for="password"]{
       color:#fff;
     }
-    button{
-      transition:background-color 500ms ease-in,color 1s ease-out;
+    // button{
+    //   transition:background-color 500ms ease-in,color 1s ease-out;
       
-    }
-    button:hover{
-      background-color:#000;
-      color:#fff;
-      transform: scale(1.2);
-    }
+    // }
+    // button:hover{
+    //   background-color:#000;
+    //   color:#fff;
+    //   transform: scale(1.2);
+    // }
   </style>
   <div class="forms">    
       <form action="submit">

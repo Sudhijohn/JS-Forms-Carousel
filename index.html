@@ -5,27 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
     <link rel="stylesheet" href="./styles.css" />
-    <!-- <script defer src="./forms.js"></script> -->
     <script type="module" src="./script.js"></script>
   </head>
   <body>
     <main class="container">
       <img class="arrow" src="./assets/left-arrow.svg" alt="left-arrow" />
       <form id="form" action="submit">
-        <section class="personal-details">
-          <div class="name">
-            <label for="name">Name :</label>
-            <input type="text" id="name" required />
-          </div>
-          <div class="name">
-            <label for="email">Email :</label>
-            <input type="email" id="email" />
-          </div>
-          <div class="name">
-            <label for="phone">Phone :</label>
-            <input type="number" id="phone" required />
+        <section class="user-details">
+          <h4 class="section-heading">Add User</h4>
+          <hr />
+          <div class="form-container">
+            <div class="form-item">
+              <label for="name">Name :</label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="form-item">
+              <label for="email">Email :</label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="form-item">
+              <label for="phone">Phone :</label>
+              <input type="number" id="phone" required />
+            </div>
           </div>
         </section>
+        <div class="form-item align-center">
+          <button class="btn">Create User</button>
+        </div>
       </form>
       <img class="arrow" src="./assets/right-arrow.svg" alt="right-arrow" />
     </main>
