@@ -1,0 +1,16 @@
+{
+  "name": "forms",
+  "version": "1.0.0",
+  "description": "A Simple Project with Forms and Carousel using vanila JS and CSS",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.12.0"
+  }
+}
