@@ -1,22 +1,4 @@
-:root {
-  --color-red: #f00;
-  --color-blue: #00f;
-  --color-black: #000;
-  --color-white: #fff;
-  --color-green: #090;
-  --color-dark-gray: #3a3a3a;
-  --color-light-gray: #fcfcfc;
-  --color-facebook-blue: #1877f2;
-
-  --animation: 200ms ease-in-out;
-
-  --border-style-light: 1px solid;
-  --border-style-thick: 2px solid;
-  --border-thick-black: var(--border-style-thick) var(--color-black);
-  --border-thick-green: var(--border-style-thick) var(--color-green);
-  --border-thick-red: var(--border-style-thick) var(--color-red);
-  --border-thick-white: var(--border-style-thick) var(--color-white);
-
+.input-container {
   --container-bg-color: var(--color-light-gray);
   --container-shadow: 5px 5px 5px var(--color-dark-gray);
   --container-font-size: 1rem;
@@ -24,36 +6,10 @@
 
   --img-arrow-width: var(--container-font-size);
 
-  --background-url: url("https://wallpapers.com/images/hd/code-symbols-programming-hjbyni9117oaqbap.webp");
-
-  box-sizing: border-box;
-}
-
-body {
-  background-image: var(--background-url);
-}
-
-.btn {
-  background-color: var(--color-facebook-blue);
-  color: var(--color-white);
-  padding: 0.7rem;
-  transition: transform 250ms ease-in;
-}
-
-.btn:hover {
-  transform: scale(1.1);
-}
-
-.align-center {
-  text-align: center;
-}
-
-.container {
   background: var(--container-bg-color);
   box-shadow: var(--container-shadow);
   font-size: var(--container-font-size);
   margin: 0 auto;
-  /* width: calc(var(--container-width)-15%); */
   display: flex;
   justify-content: center;
 
@@ -110,11 +66,10 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
-  .container {
+  .input-container {
     font-size: calc(
       var(--container-font-size) + var(--container-font-size) * 0.2
     );
-    /* width: calc(var(--container-width)-25%); */
 
     .arrow {
       display: none;
@@ -124,11 +79,10 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
+  .input-container {
     font-size: calc(
       var(--container-font-size) + var(--container-font-size) * 0.3
     );
-    /* width: calc(var(--container-width)-20%); */
 
     .arrow {
       width: calc(var(--img-arrow-width) + var(--img-arrow-width));
@@ -140,14 +94,12 @@ body {
   .btn {
     padding: 1rem;
   }
-  .container {
+  .input-container {
     font-size: calc(
       var(--container-font-size) + var(--container-font-size) * 0.5
     );
-    /* width: var(--container-width); */
 
     .arrow {
-      /* width: calc(var(--img-arrow-width) + (var(--img-arrow-width) * 1.5)); */
       display: none;
     }
 

@@ -4,36 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <script type="module" src="./script.js"></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script type="module" src="./scripts/script.js"></script>
   </head>
   <body>
-    <main class="container">
-      <img class="arrow" src="./assets/left-arrow.svg" alt="left-arrow" />
-      <form id="form" action="submit">
-        <section class="user-details">
-          <h4 class="section-heading">Add User</h4>
-          <hr />
-          <div class="form-container">
-            <div class="form-item">
-              <label for="name">Name :</label>
-              <input type="text" id="name" required />
+    <main>
+      <div class="input-container">
+        <img class="arrow" src="./assets/left-arrow.svg" alt="left-arrow" />
+        <form id="form" action="submit">
+          <section>
+            <h4 class="section-heading">Add User</h4>
+            <hr />
+            <div class="form-container">
+              <div class="form-item">
+                <label for="name">Name :</label>
+                <input type="text" id="name" required minlength="6" />
+              </div>
+              <div class="form-item">
+                <label for="email">Email :</label>
+                <input type="email" id="email" required />
+              </div>
+              <div class="form-item">
+                <label for="phone">Phone :</label>
+                <input type="number" id="phone" required />
+              </div>
             </div>
-            <div class="form-item">
-              <label for="email">Email :</label>
-              <input type="email" id="email" required />
-            </div>
-            <div class="form-item">
-              <label for="phone">Phone :</label>
-              <input type="number" id="phone" required />
-            </div>
+          </section>
+          <div class="form-item align-center">
+            <button class="btn">Create User</button>
           </div>
-        </section>
-        <div class="form-item align-center">
-          <button class="btn">Create User</button>
+        </form>
+        <img class="arrow" src="./assets/right-arrow.svg" alt="right-arrow" />
+      </div>
+
+      <div class="user-container">
+        <div class="carousel">
+          <div class="card"></div>
+          <div class="card"></div>
+          <div class="card"></div>
         </div>
-      </form>
-      <img class="arrow" src="./assets/right-arrow.svg" alt="right-arrow" />
+        <div class="user-details">
+          <h2>User Details</h2>
+        </div>
+      </div>
     </main>
   </body>
 </html>

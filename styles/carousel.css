@@ -1,0 +1,37 @@
+.carousel {
+  background-color: var(--color-azure);
+  min-height: fit-content;
+  flex: 40%;
+
+  .card {
+    min-height: 20rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 15rem;
+  }
+
+  .card:nth-child(1) {
+    background: url("https://img.freepik.com/free-photo/golden-frame-blue-background_53876-92990.jpg?size=626&ext=jpg");
+  }
+
+  .card:nth-child(2) {
+    background: url("https://img.freepik.com/free-photo/pattern-with-watercolor-flowers-vintage_1268-29266.jpg?w=1060&t=st=1709523688~exp=1709524288~hmac=8fab454f3d5475bac44fed4ace2e41d939b3eaf3aeb688c7a43103ab8e02c34e");
+    display: none;
+  }
+
+  .card:nth-child(3) {
+    background: url("https://img.freepik.com/free-photo/rainbow-light-watercolor-stains_125540-2250.jpg?w=826&t=st=1709523757~exp=1709524357~hmac=6039952d01b3603512f8f8afd0251e129cdd7f4ad0aac6117873a155d1241b3f");
+    display: none;
+  }
+}
+
+.user-container {
+  margin-top: 3%;
+  display: flex;
+  gap: 1%;
+}
+
+.user-details {
+  background-color: var(--color-azure);
+  flex: 40%;
+}

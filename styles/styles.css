@@ -1,0 +1,52 @@
+@import "./carousel.css";
+@import "./userForms.css";
+
+:root {
+  --color-red: #f00;
+  --color-blue: #00f;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-green: #090;
+  --color-azure: #f0ffff;
+  --color-dark-gray: #3a3a3a;
+  --color-light-gray: #fcfcfc;
+  --color-facebook-blue: #1877f2;
+
+  --animation: 200ms ease-in-out;
+
+  --border-style-light: 1px solid;
+  --border-style-thick: 2px solid;
+  --border-thick-black: var(--border-style-thick) var(--color-black);
+  --border-thick-green: var(--border-style-thick) var(--color-green);
+  --border-thick-red: var(--border-style-thick) var(--color-red);
+  --border-thick-white: var(--border-style-thick) var(--color-white);
+
+  --background-url: url("https://wallpapers.com/images/hd/code-symbols-programming-hjbyni9117oaqbap.webp");
+
+  box-sizing: border-box;
+}
+
+body {
+  background-image: var(--background-url);
+}
+
+.btn {
+  background-color: var(--color-facebook-blue);
+  color: var(--color-white);
+  padding: 0.7rem;
+  transition: transform 250ms ease-in;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.align-center {
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  .btn {
+    padding: 1rem;
+  }
+}
